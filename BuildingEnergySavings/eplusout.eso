@@ -1,0 +1,432 @@
+Program Version,EnergyPlus, Version 8.7.0-78a111df4a, YMD=2023.07.04 17:30
+1,5,Environment Title[],Latitude[deg],Longitude[deg],Time Zone[],Elevation[m]
+2,6,Day of Simulation[],Month[],Day of Month[],DST Indicator[1=yes 0=no],Hour[],StartMinute[],EndMinute[],DayType
+3,3,Cumulative Day of Simulation[],Month[],Day of Month[],DST Indicator[1=yes 0=no],DayType  ! When Daily Report Variables Requested
+4,2,Cumulative Days of Simulation[],Month[]  ! When Monthly Report Variables Requested
+5,1,Cumulative Days of Simulation[] ! When Run Period Report Variables Requested
+6,1,Environment,Site Outdoor Air Drybulb Temperature [C] !TimeStep
+7,1,Environment,Site Wind Speed [m/s] !TimeStep
+8,1,Environment,Site Rain Status [] !TimeStep
+9,1,THERMAL ZONE 1 189.1-2009 - OFFICE - OPENOFFICE - CZ4-8 PEOPLE,People Air Relative Humidity [%] !TimeStep
+10,1,THERMAL ZONE 2 189.1-2009 - OFFICE - OPENOFFICE - CZ4-8 PEOPLE,People Air Relative Humidity [%] !TimeStep
+11,1,THERMAL ZONE 3 189.1-2009 - OFFICE - OPENOFFICE - CZ4-8 PEOPLE,People Air Relative Humidity [%] !TimeStep
+146,1,SURFACE 13,Surface Outside Face Incident Solar Radiation Rate per Area [W/m2] !TimeStep
+147,1,SURFACE 13,Surface Outside Face Incident Beam Solar Radiation Rate per Area [W/m2] !TimeStep
+148,1,SURFACE 9,Surface Outside Face Incident Solar Radiation Rate per Area [W/m2] !TimeStep
+149,1,SURFACE 14,Surface Outside Face Incident Solar Radiation Rate per Area [W/m2] !TimeStep
+150,1,SURFACE 15,Surface Outside Face Incident Solar Radiation Rate per Area [W/m2] !TimeStep
+151,1,SURFACE 11,Surface Inside Face Temperature [C] !TimeStep
+152,1,SURFACE 11,Surface Outside Face Temperature [C] !TimeStep
+153,1,SURFACE 11,Surface Inside Face Adjacent Air Temperature [C] !TimeStep
+154,1,SURFACE 11,Surface Inside Face Convection Heat Transfer Coefficient [W/m2-K] !TimeStep
+155,1,SURFACE 12,Surface Inside Face Temperature [C] !TimeStep
+156,1,SURFACE 12,Surface Outside Face Temperature [C] !TimeStep
+157,1,SURFACE 12,Surface Inside Face Adjacent Air Temperature [C] !TimeStep
+158,1,SURFACE 12,Surface Inside Face Convection Heat Transfer Coefficient [W/m2-K] !TimeStep
+159,1,SURFACE 13,Surface Inside Face Temperature [C] !TimeStep
+160,1,SURFACE 13,Surface Outside Face Temperature [C] !TimeStep
+161,1,SURFACE 13,Surface Inside Face Adjacent Air Temperature [C] !TimeStep
+162,1,SURFACE 13,Surface Inside Face Convection Heat Transfer Coefficient [W/m2-K] !TimeStep
+163,1,SURFACE 13,Surface Outside Face Solar Radiation Heat Gain Rate [W] !TimeStep
+164,1,SURFACE 9,Surface Inside Face Temperature [C] !TimeStep
+165,1,SURFACE 9,Surface Outside Face Temperature [C] !TimeStep
+166,1,SURFACE 9,Surface Inside Face Adjacent Air Temperature [C] !TimeStep
+167,1,SURFACE 9,Surface Inside Face Convection Heat Transfer Coefficient [W/m2-K] !TimeStep
+168,1,SURFACE 9,Surface Outside Face Solar Radiation Heat Gain Rate [W] !TimeStep
+169,1,SURFACE 2,Surface Inside Face Temperature [C] !TimeStep
+170,1,SURFACE 2,Surface Outside Face Temperature [C] !TimeStep
+171,1,SURFACE 2,Surface Inside Face Adjacent Air Temperature [C] !TimeStep
+172,1,SURFACE 2,Surface Inside Face Convection Heat Transfer Coefficient [W/m2-K] !TimeStep
+173,1,SURFACE 10,Surface Inside Face Temperature [C] !TimeStep
+174,1,SURFACE 10,Surface Outside Face Temperature [C] !TimeStep
+175,1,SURFACE 10,Surface Inside Face Adjacent Air Temperature [C] !TimeStep
+176,1,SURFACE 10,Surface Inside Face Convection Heat Transfer Coefficient [W/m2-K] !TimeStep
+177,1,SURFACE 14,Surface Inside Face Adjacent Air Temperature [C] !TimeStep
+178,1,SURFACE 14,Surface Inside Face Convection Heat Transfer Coefficient [W/m2-K] !TimeStep
+179,1,SURFACE 14,Surface Outside Face Solar Radiation Heat Gain Rate [W] !TimeStep
+180,1,SURFACE 15,Surface Inside Face Adjacent Air Temperature [C] !TimeStep
+181,1,SURFACE 15,Surface Inside Face Convection Heat Transfer Coefficient [W/m2-K] !TimeStep
+182,1,SURFACE 15,Surface Outside Face Solar Radiation Heat Gain Rate [W] !TimeStep
+183,1,SURFACE 16,Surface Inside Face Adjacent Air Temperature [C] !TimeStep
+184,1,SURFACE 16,Surface Inside Face Convection Heat Transfer Coefficient [W/m2-K] !TimeStep
+185,1,SURFACE 17,Surface Inside Face Adjacent Air Temperature [C] !TimeStep
+186,1,SURFACE 17,Surface Inside Face Convection Heat Transfer Coefficient [W/m2-K] !TimeStep
+187,1,SURFACE 3,Surface Inside Face Adjacent Air Temperature [C] !TimeStep
+188,1,SURFACE 3,Surface Inside Face Convection Heat Transfer Coefficient [W/m2-K] !TimeStep
+189,1,SURFACE 18,Surface Inside Face Adjacent Air Temperature [C] !TimeStep
+190,1,SURFACE 18,Surface Inside Face Convection Heat Transfer Coefficient [W/m2-K] !TimeStep
+191,1,SURFACE 19,Surface Inside Face Adjacent Air Temperature [C] !TimeStep
+192,1,SURFACE 19,Surface Inside Face Convection Heat Transfer Coefficient [W/m2-K] !TimeStep
+193,1,SURFACE 4,Surface Inside Face Adjacent Air Temperature [C] !TimeStep
+194,1,SURFACE 4,Surface Inside Face Convection Heat Transfer Coefficient [W/m2-K] !TimeStep
+195,1,SURFACE 5,Surface Inside Face Adjacent Air Temperature [C] !TimeStep
+196,1,SURFACE 5,Surface Inside Face Convection Heat Transfer Coefficient [W/m2-K] !TimeStep
+197,1,SURFACE 5,Surface Outside Face Solar Radiation Heat Gain Rate [W] !TimeStep
+198,1,SURFACE 7,Surface Inside Face Adjacent Air Temperature [C] !TimeStep
+199,1,SURFACE 7,Surface Inside Face Convection Heat Transfer Coefficient [W/m2-K] !TimeStep
+200,1,SURFACE 7,Surface Outside Face Solar Radiation Heat Gain Rate [W] !TimeStep
+201,1,SURFACE 8,Surface Inside Face Adjacent Air Temperature [C] !TimeStep
+202,1,SURFACE 8,Surface Inside Face Convection Heat Transfer Coefficient [W/m2-K] !TimeStep
+203,1,SURFACE 8,Surface Outside Face Solar Radiation Heat Gain Rate [W] !TimeStep
+204,1,SURFACE 1,Surface Inside Face Adjacent Air Temperature [C] !TimeStep
+205,1,SURFACE 1,Surface Inside Face Convection Heat Transfer Coefficient [W/m2-K] !TimeStep
+206,1,SURFACE 6,Surface Inside Face Adjacent Air Temperature [C] !TimeStep
+207,1,SURFACE 6,Surface Inside Face Convection Heat Transfer Coefficient [W/m2-K] !TimeStep
+259,1,THERMAL ZONE 1,Zone Air System Sensible Cooling Energy [J] !TimeStep
+280,1,THERMAL ZONE 1,Zone Air Temperature [C] !TimeStep
+281,1,THERMAL ZONE 1,Zone Air Relative Humidity [%] !TimeStep
+303,1,THERMAL ZONE 2,Zone Air System Sensible Cooling Energy [J] !TimeStep
+314,1,THERMAL ZONE 2,Zone Air Temperature [C] !TimeStep
+315,1,THERMAL ZONE 2,Zone Air Relative Humidity [%] !TimeStep
+337,1,THERMAL ZONE 3,Zone Air System Sensible Cooling Energy [J] !TimeStep
+348,1,THERMAL ZONE 3,Zone Air Temperature [C] !TimeStep
+349,1,THERMAL ZONE 3,Zone Air Relative Humidity [%] !TimeStep
+412,1,THERMAL ZONE 1 IDEAL LOADS AIR SYSTEM,Zone Ideal Loads Zone Sensible Cooling Energy [J] !TimeStep
+413,1,THERMAL ZONE 1 IDEAL LOADS AIR SYSTEM,Zone Ideal Loads Supply Air Sensible Cooling Rate [W] !TimeStep
+414,1,THERMAL ZONE 1 IDEAL LOADS AIR SYSTEM,Zone Ideal Loads Supply Air Total Cooling Rate [W] !TimeStep
+415,1,THERMAL ZONE 1 IDEAL LOADS AIR SYSTEM,Zone Ideal Loads Supply Air Mass Flow Rate [kg/s] !TimeStep
+509,1,THERMAL ZONE 1 189.1-2009 - OFFICE - OPENOFFICE - CZ4-8 PEOPLE,Zone Thermal Comfort Fanger Model PMV [] !TimeStep
+510,1,THERMAL ZONE 2 189.1-2009 - OFFICE - OPENOFFICE - CZ4-8 PEOPLE,Zone Thermal Comfort Fanger Model PMV [] !TimeStep
+511,1,THERMAL ZONE 3 189.1-2009 - OFFICE - OPENOFFICE - CZ4-8 PEOPLE,Zone Thermal Comfort Fanger Model PMV [] !TimeStep
+End of Data Dictionary
+1,RUN PERIOD 1,  22.55, 114.10,   8.00,  18.00
+2,1, 7, 1, 0, 1, 0.00,15.00,Thursday
+6,26.95
+7,0.0
+9,20.866119088550709
+10,43.591828778459618
+11,44.05638327381979
+146,0.0
+147,0.0
+148,0.0
+149,0.0
+150,0.0
+151,35.92732318532123
+152,35.65480171141136
+153,35.77062912072504
+154,3.076
+155,35.946595505013238
+156,35.618004092136299
+157,35.77062912072504
+158,3.076
+159,35.16830067677149
+160,30.631895313417727
+161,35.77062912072504
+162,3.076
+163,0.0
+164,35.68207238829695
+165,31.241740880512734
+166,35.77062912072504
+167,3.076
+168,0.0
+169,35.87100408872293
+170,35.95215430966208
+171,35.77062912072504
+172,4.04
+173,35.8779862079892
+174,35.961429955011919
+175,35.77062912072504
+176,0.948
+177,35.39926410532758
+178,3.076
+179,0.0
+180,35.39926410532758
+181,3.076
+182,0.0
+183,35.39926410532758
+184,3.076
+185,35.39926410532758
+186,3.076
+187,35.39926410532758
+188,4.04
+189,35.39926410532758
+190,0.948
+191,35.341622614617218
+192,3.076
+193,35.341622614617218
+194,3.076
+195,35.341622614617218
+196,3.076
+197,0.0
+198,35.341622614617218
+199,3.076
+200,0.0
+201,35.341622614617218
+202,3.076
+203,0.0
+204,35.341622614617218
+205,4.04
+206,35.341622614617218
+207,0.948
+509,3.290246909373423
+510,3.476173354624587
+511,3.4547068067049
+8,0.0
+259,0.0
+280,35.67255160243115
+281,20.97901063165491
+303,0.0
+314,35.31633918085616
+315,43.79169096937568
+337,0.0
+348,35.233694184363688
+349,44.31959266817472
+412,0.0
+413,0.0
+414,0.0
+415,0.0
+2,1, 7, 1, 0, 1,15.00,30.00,Thursday
+6,26.9
+7,0.0
+9,20.99994776801384
+10,43.83539525178025
+11,44.36382379858208
+146,0.0
+147,0.0
+148,0.0
+149,0.0
+150,0.0
+151,35.866482713251439
+152,35.60124427145103
+153,35.67255160243115
+154,3.076
+155,35.88581667471808
+156,35.548198162312157
+157,35.67255160243115
+158,3.076
+159,35.05141067532904
+160,30.522472169128024
+161,35.67255160243115
+162,3.076
+163,0.0
+164,35.53256585905144
+165,31.091272039680914
+166,35.67255160243115
+167,3.076
+168,0.0
+169,35.770380313014687
+170,35.87100408872293
+171,35.67255160243115
+172,4.04
+173,35.778853875783969
+174,35.8779862079892
+175,35.67255160243115
+176,0.948
+177,35.31633918085616
+178,3.076
+179,0.0
+180,35.31633918085616
+181,3.076
+182,0.0
+183,35.31633918085616
+184,3.076
+185,35.31633918085616
+186,3.076
+187,35.31633918085616
+188,4.04
+189,35.31633918085616
+190,0.948
+191,35.233694184363688
+192,3.076
+193,35.233694184363688
+194,3.076
+195,35.233694184363688
+196,3.076
+197,0.0
+198,35.233694184363688
+199,3.076
+200,0.0
+201,35.233694184363688
+202,3.076
+203,0.0
+204,35.233694184363688
+205,4.04
+206,35.233694184363688
+207,0.948
+509,3.2564911711616615
+510,3.447783369634983
+511,3.4178831813423646
+8,0.0
+259,0.0
+280,35.57817768845294
+281,21.109339111130248
+303,0.0
+314,35.23252889289125
+315,44.03864470448482
+337,0.0
+348,35.12550661878006
+349,44.629726249937657
+412,0.0
+413,0.0
+414,0.0
+415,0.0
+2,1, 7, 1, 0, 1,30.00,45.00,Thursday
+6,26.85
+7,0.0
+9,21.13038531163985
+10,44.082551628417508
+11,44.67422248747498
+146,0.0
+147,0.0
+148,0.0
+149,0.0
+150,0.0
+151,35.802914433708789
+152,35.5450310224507
+153,35.57817768845294
+154,3.076
+155,35.82192713990081
+156,35.47583073822773
+157,35.57817768845294
+158,3.076
+159,34.9352255477648
+160,30.41786460864921
+161,35.57817768845294
+162,3.076
+163,0.0
+164,35.38596514154302
+165,30.948454406664767
+166,35.57817768845294
+167,3.076
+168,0.0
+169,35.67230122743109
+170,35.770380313014687
+171,35.57817768845294
+172,4.04
+173,35.680681843888859
+174,35.778853875783969
+175,35.57817768845294
+176,0.948
+177,35.23252889289125
+178,3.076
+179,0.0
+180,35.23252889289125
+181,3.076
+182,0.0
+183,35.23252889289125
+184,3.076
+185,35.23252889289125
+186,3.076
+187,35.23252889289125
+188,4.04
+189,35.23252889289125
+190,0.948
+191,35.12550661878006
+192,3.076
+193,35.12550661878006
+194,3.076
+195,35.12550661878006
+196,3.076
+197,0.0
+198,35.12550661878006
+199,3.076
+200,0.0
+201,35.12550661878006
+202,3.076
+203,0.0
+204,35.12550661878006
+205,4.04
+206,35.12550661878006
+207,0.948
+509,3.2232543588980517
+510,3.419122564874533
+511,3.381019595708504
+8,0.0
+259,0.0
+280,35.476896205886607
+281,21.248621605114829
+303,0.0
+314,35.147905366529538
+315,44.289066626056079
+337,0.0
+348,35.017158561006009
+349,44.94259347507804
+412,0.0
+413,0.0
+414,0.0
+415,0.0
+2,1, 7, 1, 0, 1,45.00,60.00,Thursday
+6,26.8
+7,0.0
+9,21.269785570856976
+10,44.33317924221749
+11,44.98735701439585
+146,0.0
+147,0.0
+148,0.0
+149,0.0
+150,0.0
+151,35.73723808850397
+152,35.48631575669121
+153,35.476896205886607
+154,3.076
+155,35.75557780306447
+156,35.40110352851383
+157,35.476896205886607
+158,3.076
+159,34.82031618282034
+160,30.317175482436089
+161,35.476896205886607
+162,3.076
+163,0.0
+164,35.24269397001113
+165,30.812189914112243
+166,35.476896205886607
+167,3.076
+168,0.0
+169,35.577919555384358
+170,35.67230122743109
+171,35.476896205886607
+172,4.04
+173,35.58595356719846
+174,35.680681843888859
+175,35.476896205886607
+176,0.948
+177,35.147905366529538
+178,3.076
+179,0.0
+180,35.147905366529538
+181,3.076
+182,0.0
+183,35.147905366529538
+184,3.076
+185,35.147905366529538
+186,3.076
+187,35.147905366529538
+188,4.04
+189,35.147905366529538
+190,0.948
+191,35.017158561006009
+192,3.076
+193,35.017158561006009
+194,3.076
+195,35.017158561006009
+196,3.076
+197,0.0
+198,35.017158561006009
+199,3.076
+200,0.0
+201,35.017158561006009
+202,3.076
+203,0.0
+204,35.017158561006009
+205,4.04
+206,35.017158561006009
+207,0.948
+509,3.1889474875710128
+510,3.390228709418424
+511,3.344163474560452
+8,0.0
+259,0.0
+280,35.37903727470133
+281,21.384852578974678
+303,0.0
+314,35.06257936967961
+315,44.54273154079013
+337,0.0
+348,34.90879193445928
+349,45.25787867654601
+412,0.0
+413,0.0
+414,0.0
+415,0.0

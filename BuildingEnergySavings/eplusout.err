@@ -1,0 +1,21 @@
+Program Version,EnergyPlus, Version 8.7.0-78a111df4a, YMD=2023.07.04 17:30,IDD_Version 8.7.0
+   ** Warning ** CheckEnvironmentSpecifications: SimulationControl specified doing design day simulations, but no design environments specified.
+   **   ~~~   ** ...No design environment results produced. For these results, add appropriate SizingPeriod:* objects for your simulation.
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="PEOPLESCHEDULE" has missing day types in Through=05/01
+   **   ~~~   ** Last "For" field=FOR: WEEKENDS
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="HVACSCHEDULE", Blank Schedule Type Limits Name input -- will not be validated.
+   ** Warning ** ProcessScheduleInput: Schedule:Constant="ALWAYS ON DISCRETE", Blank Schedule Type Limits Name input -- will not be validated.
+   ** Warning ** ProcessScheduleInput: Schedule:Constant="ALWAYS OFF DISCRETE", Blank Schedule Type Limits Name input -- will not be validated.
+   ** Warning ** ProcessScheduleInput: Schedule:Constant="ALWAYS ON CONTINUOUS", Blank Schedule Type Limits Name input -- will not be validated.
+   ** Warning ** CheckUsedConstructions: There are 6 nominally unused constructions in input.
+   **   ~~~   ** For explicit details on each unused construction, use Output:Diagnostics,DisplayExtraWarnings;
+   ************* Testing Individual Branch Integrity
+   ************* All Branches passed integrity testing
+   ************* Testing Individual Supply Air Path Integrity
+   ************* All Supply Air Paths passed integrity testing
+   ************* Testing Individual Return Air Path Integrity
+   ************* All Return Air Paths passed integrity testing
+   ************* No node connection errors were found.
+   ************* Beginning Simulation

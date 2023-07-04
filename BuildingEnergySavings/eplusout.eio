@@ -1,0 +1,200 @@
+Program Version,EnergyPlus, Version 8.7.0-78a111df4a, YMD=2023.07.04 17:30
+! <Version>, Version ID
+ Version, 8.7
+! <Timesteps per Hour>, #TimeSteps, Minutes per TimeStep {minutes}
+ Timesteps per Hour,  4, 15
+! <System Convergence Limits>, Minimum System TimeStep {minutes}, Max HVAC Iterations, Minimum Plant Iterations, Maximum Plant Iterations
+ System Convergence Limits, 1, 20, 2, 8
+! <Simulation Control>, Do Zone Sizing, Do System Sizing, Do Plant Sizing, Do Design Days, Do Weather Simulation, Do HVAC Sizing Simulation
+ Simulation Control, No, No, No, Yes, Yes, No
+! <Output Reporting Tolerances>, Tolerance for Time Heating Setpoint Not Met, Tolerance for Zone Cooling Setpoint Not Met Time
+ Output Reporting Tolerances, 0.200, 0.200, 
+! <Site:GroundTemperature:BuildingSurface>,Jan{C},Feb{C},Mar{C},Apr{C},May{C},Jun{C},Jul{C},Aug{C},Sep{C},Oct{C},Nov{C},Dec{C}
+ Site:GroundTemperature:BuildingSurface,  18.00,  18.00,  18.00,  18.00,  18.00,  18.00,  18.00,  18.00,  18.00,  18.00,  18.00,  18.00
+! <Site:GroundTemperature:FCfactorMethod>,Jan{C},Feb{C},Mar{C},Apr{C},May{C},Jun{C},Jul{C},Aug{C},Sep{C},Oct{C},Nov{C},Dec{C}
+ Site:GroundTemperature:FCfactorMethod,  17.37,  16.83,  17.79,  19.29,  23.21,  26.23,  28.27,  28.89,  27.84,  25.49,  22.35,  19.44
+! <Site:GroundTemperature:Shallow>,Jan{C},Feb{C},Mar{C},Apr{C},May{C},Jun{C},Jul{C},Aug{C},Sep{C},Oct{C},Nov{C},Dec{C}
+ Site:GroundTemperature:Shallow,  13.00,  13.00,  13.00,  13.00,  13.00,  13.00,  13.00,  13.00,  13.00,  13.00,  13.00,  13.00
+! <Site:GroundTemperature:Deep>,Jan{C},Feb{C},Mar{C},Apr{C},May{C},Jun{C},Jul{C},Aug{C},Sep{C},Oct{C},Nov{C},Dec{C}
+ Site:GroundTemperature:Deep,  16.00,  16.00,  16.00,  16.00,  16.00,  16.00,  16.00,  16.00,  16.00,  16.00,  16.00,  16.00
+! <Site:GroundReflectance>,Jan{dimensionless},Feb{dimensionless},Mar{dimensionless},Apr{dimensionless},May{dimensionless},Jun{dimensionless},Jul{dimensionless},Aug{dimensionless},Sep{dimensionless},Oct{dimensionless},Nov{dimensionless},Dec{dimensionless}
+ Site:GroundReflectance,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20
+! <Site:GroundReflectance:SnowModifier>, Normal, Daylighting {dimensionless}
+ Site:GroundReflectance:SnowModifier,   1.000,   1.000
+! <Site:GroundReflectance:Snow>,Jan{dimensionless},Feb{dimensionless},Mar{dimensionless},Apr{dimensionless},May{dimensionless},Jun{dimensionless},Jul{dimensionless},Aug{dimensionless},Sep{dimensionless},Oct{dimensionless},Nov{dimensionless},Dec{dimensionless}
+ Site:GroundReflectance:Snow,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20
+! <Site:GroundReflectance:Snow:Daylighting>,Jan{dimensionless},Feb{dimensionless},Mar{dimensionless},Apr{dimensionless},May{dimensionless},Jun{dimensionless},Jul{dimensionless},Aug{dimensionless},Sep{dimensionless},Oct{dimensionless},Nov{dimensionless},Dec{dimensionless}
+ Site:GroundReflectance:Snow:Daylighting,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20
+! <Environment:Weather Station>,Wind Sensor Height Above Ground {m},Wind Speed Profile Exponent {},Wind Speed Profile Boundary Layer Thickness {m},Air Temperature Sensor Height Above Ground {m},Wind Speed Modifier Coefficient-Internal,Temperature Modifier Coefficient-Internal
+Environment:Weather Station,10.000,0.140,270.000,1.500,1.586,9.750E-003
+! <Site:Location>, Location Name, Latitude {N+/S- Deg}, Longitude {E+/W- Deg},  Time Zone Number {GMT+/-}, Elevation {m},  Standard Pressure at Elevation {Pa}, Standard RhoAir at Elevation
+Site:Location,SHENZHEN - CHN SWERA WMO#=594930,22.55,114.10,8.00,18.00,101109,1.2017
+! <Building Information>, Building Name,North Axis {deg},Terrain,  Loads Convergence Tolerance Value,Temperature Convergence Tolerance Value,  Solar Distribution,Maximum Number of Warmup Days,Minimum Number of Warmup Days
+ Building Information,Building 1,0.000,Suburbs,4.00000E-002,0.40000,FullExterior,25,6
+! <Inside Convection Algorithm>, Algorithm {Simple | TARP | CeilingDiffuser | AdaptiveConvectionAlgorithm}
+Inside Convection Algorithm,Simple
+! <Outside Convection Algorithm>, Algorithm {SimpleCombined | TARP | MoWitt | DOE-2 | AdaptiveConvectionAlgorithm}
+Outside Convection Algorithm,SimpleCombined
+! <Sky Radiance Distribution>, Value {Anisotropic}
+Sky Radiance Distribution,Anisotropic
+! <Zone Air Solution Algorithm>, Value {ThirdOrderBackwardDifference | AnalyticalSolution | EulerMethod}
+ Zone Air Solution Algorithm, ThirdOrderBackwardDifference
+! <Zone Air Carbon Dioxide Balance Simulation>, Simulation {Yes/No}, Carbon Dioxide Concentration
+ Zone Air Carbon Dioxide Balance Simulation, No,N/A
+! <Zone Air Generic Contaminant Balance Simulation>, Simulation {Yes/No}, Generic Contaminant Concentration
+ Zone Air Generic Contaminant Balance Simulation, No,N/A
+! <Zone Air Mass Flow Balance Simulation>, Enforce Mass Balance, Adjust Zone Mixing, Adjust Zone Infiltration {AddInfiltration | AdjustInfiltration | None}, Infiltration Zones {MixingSourceZonesOnly | AllZones}
+ Zone Air Mass Flow Balance Simulation, No,N/A,N/A,N/A
+! <Environment:Site Atmospheric Variation>,Wind Speed Profile Exponent {},Wind Speed Profile Boundary Layer Thickness {m},Air Temperature Gradient Coefficient {K/m}
+Environment:Site Atmospheric Variation,0.220,370.000,6.500000E-003
+! <Surface Geometry>,Starting Corner,Vertex Input Direction,Coordinate System,Daylight Reference Point Coordinate System,Rectangular (Simple) Surface Coordinate System
+ Surface Geometry,UpperLeftCorner,Counterclockwise,RelativeCoordinateSystem,RelativeCoordinateSystem,RelativeToZoneOrigin
+! <Surface Heat Transfer Algorithm>, Value {CTF - ConductionTransferFunction | EMPD - MoisturePenetrationDepthConductionTransferFunction | CondFD - ConductionFiniteDifference | HAMT - CombinedHeatAndMoistureFiniteElement} - Description,Inside Surface Max Temperature Limit{C}, Surface Convection Coefficient Lower Limit {W/m2-K}, Surface Convection Coefficient Upper Limit {W/m2-K}
+Surface Heat Transfer Algorithm, CTF - ConductionTransferFunction,200,0.10,1000.0
+! <Shading Summary>, Number of Fixed Detached Shades, Number of Building Detached Shades, Number of Attached Shades
+ Shading Summary,0,0,0
+! <Zone Summary>, Number of Zones, Number of Zone Surfaces, Number of SubSurfaces
+ Zone Summary,3,19,0
+! <Zone Information>,Zone Name,North Axis {deg},Origin X-Coordinate {m},Origin Y-Coordinate {m},Origin Z-Coordinate {m},Centroid X-Coordinate {m},Centroid Y-Coordinate {m},Centroid Z-Coordinate {m},Type,Zone Multiplier,Zone List Multiplier,Minimum X {m},Maximum X {m},Minimum Y {m},Maximum Y {m},Minimum Z {m},Maximum Z {m},Ceiling Height {m},Volume {m3},Zone Inside Convection Algorithm {Simple-Detailed-CeilingDiffuser-TrombeWall},Zone Outside Convection Algorithm {Simple-Detailed-Tarp-MoWitt-DOE-2-BLAST}, Floor Area {m2},Exterior Gross Wall Area {m2},Exterior Net Wall Area {m2},Exterior Window Area {m2}, Number of Surfaces, Number of SubSurfaces, Number of Shading SubSurfaces,  Part of Total Building Area
+ Zone Information, THERMAL ZONE 1,0.0,0.00,2.00,0.00,1.50,4.00,1.75,1,1,1,0.00,3.00,2.00,6.00,0.00,3.50,3.50,42.00,Simple,Simple,12.00,24.50,24.50,0.00,6,0,0,Yes
+ Zone Information, THERMAL ZONE 2,0.0,6.00,2.00,0.00,4.50,4.00,1.75,1,1,1,3.00,6.00,2.00,6.00,0.00,3.50,3.50,42.00,Simple,Simple,12.00,24.50,24.50,0.00,6,0,0,Yes
+ Zone Information, THERMAL ZONE 3,0.0,0.00,0.00,0.00,3.00,1.00,1.75,1,1,1,0.00,6.00,0.00,2.00,0.00,3.50,3.50,42.00,Simple,Simple,12.00,35.00,35.00,0.00,7,0,0,Yes
+! <Zone Internal Gains Nominal>,Zone Name, Floor Area {m2},# Occupants,Area per Occupant {m2/person},Occupant per Area {person/m2},Interior Lighting {W/m2},Electric Load {W/m2},Gas Load {W/m2},Other Load {W/m2},Hot Water Eq {W/m2},Steam Equipment {W/m2},Sum Loads per Area {W/m2},Outdoor Controlled Baseboard Heat
+ Zone Internal Gains Nominal, THERMAL ZONE 1,12.00,0.6,20.000,5.000E-002,0.667,7.642,0.000,0.000,0.000,0.000,8.309,No
+ Zone Internal Gains Nominal, THERMAL ZONE 2,12.00,0.6,20.000,5.000E-002,0.000,7.642,0.000,0.000,0.000,0.000,7.642,No
+ Zone Internal Gains Nominal, THERMAL ZONE 3,12.00,0.6,20.000,5.000E-002,0.000,7.642,0.000,0.000,0.000,0.000,7.642,No
+! <People Internal Gains Nominal>,Name,Schedule Name,Zone Name,Zone Floor Area {m2},# Zone Occupants,Number of People {},People/Floor Area {person/m2},Floor Area per person {m2/person},Fraction Radiant,Fraction Convected,Sensible Fraction Calculation,Activity level,ASHRAE 55 Warnings,Carbon Dioxide Generation Rate,Nominal Minimum Number of People,Nominal Maximum Number of People,MRT Calculation Type,Work Efficiency, Clothing Insulation Calculation Method,Clothing Insulation Calculation Method Schedule,Clothing,Air Velocity,Fanger Calculation,Pierce Calculation,KSU Calculation
+ People Internal Gains Nominal, THERMAL ZONE 1 189.1-2009 - OFFICE - OPENOFFICE - CZ4-8 PEOPLE,ALWAYS OFF DISCRETE,THERMAL ZONE 1,12.00,0.6,0.6,5.000E-002,20.000,0.300,0.700,AutoCalculate,ACTIVITY_HUODONG,No,3.8200E-008,0,0,Zone Averaged,WORK EFFICIENCY,Clothing Insulation Schedule,N/A,CLOTHING INSULATION SSS,AIR SPEED SSS,Yes,No,No
+ People Internal Gains Nominal, THERMAL ZONE 2 189.1-2009 - OFFICE - OPENOFFICE - CZ4-8 PEOPLE,ALWAYS OFF DISCRETE,THERMAL ZONE 2,12.00,0.6,0.6,5.000E-002,20.000,0.300,0.700,AutoCalculate,ACTIVITY_HUODONG,No,3.8200E-008,0,0,Zone Averaged,WORK EFFICIENCY,Clothing Insulation Schedule,N/A,CLOTHING INSULATION SSS,AIR SPEED SSS,Yes,No,No
+ People Internal Gains Nominal, THERMAL ZONE 3 189.1-2009 - OFFICE - OPENOFFICE - CZ4-8 PEOPLE,ALWAYS OFF DISCRETE,THERMAL ZONE 3,12.00,0.6,0.6,5.000E-002,20.000,0.300,0.700,AutoCalculate,ACTIVITY_HUODONG,No,3.8200E-008,0,0,Zone Averaged,WORK EFFICIENCY,Clothing Insulation Schedule,N/A,CLOTHING INSULATION SSS,AIR SPEED SSS,Yes,No,No
+! <Lights Internal Gains Nominal>,Name,Schedule Name,Zone Name,Zone Floor Area {m2},# Zone Occupants,Lighting Level {W},Lights/Floor Area {W/m2},Lights per person {W/person},Fraction Return Air,Fraction Radiant,Fraction Short Wave,Fraction Convected,Fraction Replaceable,End-Use Category,Nominal Minimum Lighting Level {W},Nominal Maximum Lighting Level {W}
+ Lights Internal Gains Nominal, 189.1-2009 - OFFICE - OPENOFFICE - CZ4-8 LIGHTS,ALWAYS OFF DISCRETE,THERMAL ZONE 1,12.00,0.6,8.000,0.667,13.333,0.000,0.000,0.000,1.000,1.000,General,0.000,0.000
+! <ElectricEquipment Internal Gains Nominal>,Name,Schedule Name,Zone Name,Zone Floor Area {m2},# Zone Occupants,Equipment Level {W},Equipment/Floor Area {W/m2},Equipment per person {W/person},Fraction Latent,Fraction Radiant,Fraction Lost,Fraction Convected,End-Use SubCategory,Nominal Minimum Equipment Level {W},Nominal Maximum Equipment Level {W}
+ ElectricEquipment Internal Gains Nominal, THERMAL ZONE 1 189.1-2009 - OFFICE - OPENOFFICE - CZ4-8 ELECTRIC EQUIPMENT,ALWAYS OFF DISCRETE,THERMAL ZONE 1,12.00,0.6,91.709,7.642,152.848,0.000,0.000,0.000,1.000,General,0.000,0.000
+ ElectricEquipment Internal Gains Nominal, THERMAL ZONE 2 189.1-2009 - OFFICE - OPENOFFICE - CZ4-8 ELECTRIC EQUIPMENT,ALWAYS OFF DISCRETE,THERMAL ZONE 2,12.00,0.6,91.709,7.642,152.848,0.000,0.000,0.000,1.000,General,0.000,0.000
+ ElectricEquipment Internal Gains Nominal, THERMAL ZONE 3 189.1-2009 - OFFICE - OPENOFFICE - CZ4-8 ELECTRIC EQUIPMENT,ALWAYS OFF DISCRETE,THERMAL ZONE 3,12.00,0.6,91.709,7.642,152.848,0.000,0.000,0.000,1.000,General,0.000,0.000
+! <Construction CTF>,Construction Name,Index,#Layers,#CTFs,Time Step {hours},ThermalConductance {w/m2-K},OuterThermalAbsorptance,InnerThermalAbsorptance,OuterSolarAbsorptance,InnerSolarAbsorptance,Roughness
+! <Material CTF Summary>,Material Name,Thickness {m},Conductivity {w/m-K},Density {kg/m3},Specific Heat {J/kg-K},ThermalResistance {m2-K/w}
+! <Material:Air>,Material Name,ThermalResistance {m2-K/w}
+! <CTF>,Time,Outside,Cross,Inside,Flux (except final one)
+ Construction CTF,ROOF,   1,   4,   8,   0.250,      2.581    ,   1.000,   1.000,   0.000,   0.000,MediumRough
+ Material CTF Summary,40REINFORCED CONCRETE,  0.0400,         1.740,   2500.000,      920.000,  0.2299E-01
+ Material CTF Summary,25INSULATION BOARD,  0.0250,         0.085,   1000.000,      920.000,  0.2941    
+ Material CTF Summary,50CONCRETE,  0.0500,         0.840,   1600.000,     1050.000,  0.5952E-01
+ Material CTF Summary,10CEMENT MORTAR,  0.0100,         0.930,   1800.000,     1050.000,  0.1075E-01
+ CTF,   8,      0.71222569E-10,      0.30463341E-11,      0.10858072E-09,     -0.78786475E-15
+ CTF,   7,     -0.52245885E-06,      0.16449728E-07,     -0.47148353E-06,      0.11961315E-10
+ CTF,   6,      0.61869055E-03,      0.12393949E-04,      0.55001308E-03,     -0.45767585E-07
+ CTF,   5,     -0.88659402E-01,      0.14505554E-02,     -0.79958390E-01,      0.42794847E-04
+ CTF,   4,       2.6527171    ,      0.30341469E-01,       2.4367826    ,     -0.52274655E-02
+ CTF,   3,      -28.039247    ,      0.12905223    ,      -20.672924    ,      0.10995558    
+ CTF,   2,       107.06178    ,      0.10985752    ,       69.843075    ,     -0.66750188    
+ CTF,   1,      -153.00733    ,      0.13076917E-01,      -99.310004    ,       1.4527835    
+ CTF,   0,       71.703943    ,      0.30322840E-04,       48.066300    
+ Construction CTF,INDOOR WALL,   2,   3,  10,   0.250,      3.829    ,   1.000,   1.000,   0.000,   0.000,MediumSmooth
+ Material CTF Summary,20CEMENT MORTAR,  0.0200,         0.930,   1800.000,     1050.000,  0.2151E-01
+ Material CTF Summary,240LIMESAND BRICK,  0.2400,         1.100,   1900.000,     1050.000,  0.2182    
+ Material CTF Summary,20CEMENT MORTAR,  0.0200,         0.930,   1800.000,     1050.000,  0.2151E-01
+ CTF,  10,      0.20610763E-07,     -0.50364087E-14,      0.20610764E-07,     -0.70427343E-14
+ CTF,   9,     -0.35739263E-02,      0.50107534E-12,     -0.35739263E-02,      0.31138575E-08
+ CTF,   8,      0.13911835    ,      0.58838012E-08,      0.13911835    ,     -0.34216641E-03
+ CTF,   7,      -2.0786111    ,      0.16275442E-05,      -2.0786111    ,      0.90196293E-02
+ CTF,   6,       16.238576    ,      0.60809671E-04,       16.238576    ,     -0.98947995E-01
+ CTF,   5,      -74.374787    ,      0.56333092E-03,      -74.374787    ,      0.58745214    
+ CTF,   4,       209.18484    ,      0.15915342E-02,       209.18484    ,      -2.0573392    
+ CTF,   3,      -363.88817    ,      0.14105783E-02,      -363.88817    ,       4.3431947    
+ CTF,   2,       379.85979    ,      0.34418089E-03,       379.85979    ,      -5.3955746    
+ CTF,   1,      -217.18870    ,      0.15003194E-04,      -217.18870    ,       3.6114960    
+ CTF,   0,       52.115513    ,      0.20279743E-07,       52.115513    
+ Construction CTF,GROUND,   3,   3,   8,   0.250,     0.7258    ,   1.000,   1.000,   0.000,   0.000,MediumRough
+ Material CTF Summary,50EPS,  0.0500,         0.040,     15.000,      140.000,   1.250    
+ Material CTF Summary,200REINFORCED CONCRETE,  0.2000,         1.740,   2500.000,      920.000,  0.1149    
+ Material CTF Summary,12CEMENT MORTAR,  0.0120,         0.930,   1800.000,     1050.000,  0.1290E-01
+ CTF,   8,      0.18675384E-05,      0.42850036E-14,      0.35413402E-03,      0.14331838E-15
+ CTF,   7,     -0.12934582E-03,      0.10859675E-08,     -0.33499660E-01,      0.51257918E-04
+ CTF,   6,      0.34472468E-02,      0.67206408E-06,      0.83053263    ,     -0.23525407E-02
+ CTF,   5,     -0.45312090E-01,      0.34714299E-04,      -9.0641967    ,      0.39810105E-01
+ CTF,   4,      0.31670259    ,      0.36265194E-03,       50.504613    ,     -0.31951921    
+ CTF,   3,      -1.1921010    ,      0.96701649E-03,      -150.88713    ,       1.3025834    
+ CTF,   2,       2.3580727    ,      0.65202356E-03,       240.96053    ,      -2.7014842    
+ CTF,   1,      -2.2701024    ,      0.84152650E-04,      -192.18015    ,       2.6780151    
+ CTF,   0,      0.83152224    ,      0.64609816E-06,       59.871048    
+ Construction CTF,OUTDOOR WALL,   5,   5,  15,   0.250,     0.6137    ,   1.000,   1.000,   0.000,   0.000,MediumSmooth
+ Material CTF Summary,20CEMENT MORTAR,  0.0200,         0.930,   1800.000,     1050.000,  0.2151E-01
+ Material CTF Summary,25EPS,  0.0250,         0.040,     15.000,      140.000,  0.6250    
+ Material CTF Summary,370LIMESAND BRICK,  0.3700,         1.100,   1900.000,     1050.000,  0.3364    
+ Material CTF Summary,25EPS,  0.0250,         0.040,     15.000,      140.000,  0.6250    
+ Material CTF Summary,20CEMENT MORTAR,  0.0200,         0.930,   1800.000,     1050.000,  0.2151E-01
+ CTF,  15,     -0.61777567E-06,      0.10094131E-17,     -0.61777567E-06,      0.18957449E-16
+ CTF,  14,      0.92531416E-04,     -0.42578426E-14,      0.92531416E-04,     -0.99262797E-07
+ CTF,  13,     -0.38698093E-02,      0.28395503E-12,     -0.38698093E-02,      0.66490837E-05
+ CTF,  12,      0.79708430E-01,     -0.81490886E-11,      0.79708430E-01,     -0.19091119E-03
+ CTF,  11,     -0.98469884    ,      0.13388473E-09,     -0.98469884    ,      0.31259435E-02
+ CTF,  10,       8.0253867    ,     -0.13298261E-08,       8.0253867    ,     -0.32809290E-01
+ CTF,   9,      -45.482080    ,      0.10977734E-07,      -45.482080    ,      0.23474698    
+ CTF,   8,       184.73375    ,     -0.42691517E-07,       184.73375    ,      -1.1855531    
+ CTF,   7,      -546.56496    ,      0.20814479E-06,      -546.56496    ,       4.3067821    
+ CTF,   6,       1184.9319    ,     -0.43889626E-06,       1184.9319    ,      -11.337274    
+ CTF,   5,      -1875.8516    ,      0.94309779E-06,      -1875.8516    ,       21.569834    
+ CTF,   4,       2138.2474    ,     -0.12282508E-05,       2138.2474    ,      -29.259890    
+ CTF,   3,      -1705.0806    ,      0.11636864E-05,      -1705.0806    ,       27.503785    
+ CTF,   2,       901.02324    ,     -0.71694772E-06,       901.02324    ,      -16.974559    
+ CTF,   1,      -283.03383    ,      0.26046545E-06,      -283.03383    ,       6.1719945    
+ CTF,   0,       39.960211    ,     -0.42158776E-07,       39.960211    
+ Construction CTF,OUTQQQ,   6,   1,  18,   0.500,      1.000    ,   1.000,   1.000,   0.500,   0.500,MediumSmooth
+ Material CTF Summary,OUT,  0.0010,         0.001,  10000.000,    80000.000,   1.000    
+ CTF,  18,      0.15984159E-10,      0.30279714E-19,      0.15983859E-10,     -0.59039094E-12
+ CTF,  17,     -0.23649490E-08,      0.65690568E-17,     -0.23649497E-08,      0.88498170E-10
+ CTF,  16,      0.15589257E-06,     -0.53138077E-15,      0.15589257E-06,     -0.59201021E-08
+ CTF,  15,     -0.60599600E-05,     -0.58614891E-15,     -0.60599600E-05,      0.23400480E-06
+ CTF,  14,      0.15510965E-03,      0.28903680E-13,      0.15510965E-03,     -0.61039766E-05
+ CTF,  13,     -0.27669358E-02,      0.28593368E-11,     -0.27669358E-02,      0.11124098E-03
+ CTF,  12,      0.35551453E-01,      0.12112710E-09,      0.35551453E-01,     -0.14641284E-02
+ CTF,  11,     -0.33572501    ,      0.24761060E-08,     -0.33572501    ,      0.14203430E-01
+ CTF,  10,       2.3594211    ,      0.25959863E-07,       2.3594211    ,     -0.10284087    
+ CTF,   9,      -12.430445    ,      0.14413650E-06,      -12.430445    ,      0.55981899    
+ CTF,   8,       49.251687    ,      0.42835443E-06,       49.251687    ,      -2.2981156    
+ CTF,   7,      -146.67026    ,      0.67539318E-06,      -146.67026    ,       7.1083165    
+ CTF,   6,       326.67220    ,      0.54802527E-06,       326.67220    ,      -16.479902    
+ CTF,   5,      -538.45889    ,      0.21573533E-06,      -538.45889    ,       28.326550    
+ CTF,   4,       644.64696    ,      0.37109866E-07,       644.64696    ,      -35.413601    
+ CTF,   3,      -542.89743    ,      0.23334348E-08,      -542.89743    ,       31.175301    
+ CTF,   2,       304.00177    ,      0.27991110E-10,       304.00177    ,      -18.259605    
+ CTF,   1,      -101.37989    ,      0.29480824E-11,      -101.37989    ,       6.3712314    
+ CTF,   0,       15.207676    ,     -0.44824796E-12,       15.207676    
+ Construction CTF,INQQQ,   7,   1,   5,   0.250,      4.000    ,   1.000,   1.000,   0.500,   0.500,MediumSmooth
+ Material CTF Summary,IN,  0.0010,         0.004,   3250.000,    50000.000,  0.2500    
+ CTF,   5,     -0.33766735E-01,      0.13684592E-04,     -0.33766735E-01,      0.99576428E-03
+ CTF,   4,      0.99582908    ,      0.24671848E-02,      0.99582908    ,     -0.31192011E-01
+ CTF,   3,      -8.8220557    ,      0.38385580E-01,      -8.8220557    ,      0.30324813    
+ CTF,   2,       29.948425    ,      0.10143850    ,       29.948425    ,      -1.1645790    
+ CTF,   1,      -41.172099    ,      0.46380572E-01,      -41.172099    ,       1.8438822    
+ CTF,   0,       19.274247    ,      0.18944733E-02,       19.274247    
+ Construction CTF,DD,   8,   1,   2,   0.250,      1.000    ,   0.001,   0.001,   0.000,   0.000,MediumSmooth
+ Material CTF Summary,DOWN,  0.0010,         0.001,      0.000,      100.000,   1.000    
+ CTF,   2,      0.42538510E-19,      0.25145341E-19,      0.42538548E-19,       0.0000000    
+ CTF,   1,     -0.35449343E-08,      0.20106212E-08,     -0.35449349E-08,      0.46991934E-10
+ CTF,   0,       1.0000000    ,      1.00000000    ,       1.0000000    
+! <WindowConstruction>,Construction Name,Index,#Layers,Roughness,Conductance {W/m2-K},SHGC,Solar Transmittance at Normal Incidence,Visible Transmittance at Normal Incidence
+! <WindowMaterial:Glazing>, Material Name, Optical Data Type, Spectral Data Set Name, Thickness {m}, Solar Transmittance,Front Solar Reflectance, Back Solar Reflectance, Visible Transmittance, Front Visible Reflectance,Back Visible Reflectance,Infrared Transmittance, Front Thermal Emissivity, Back Thermal Emissivity,Conductivity {W/m-K},Dirt Factor,Solar Diffusing
+ WindowConstruction,WINDOW,4,1,VerySmooth,1.871,0.509,0.433,0.433
+ WindowMaterial:Glazing,DOUBLE WINDOW,SpectralAverage,,3.93696E-002,0.43212,0.37799,0.37799,0.43212,0.37799,0.37799,0.00000,0.84000,0.84000,0.10901,1.00000,No
+! <Shadowing/Sun Position Calculations Annual Simulations>, Calculation Method, Value {days}, Allowable Number Figures in Shadow Overlap {}, Polygon Clipping Algorithm, Sky Diffuse Modeling Algorithm
+Shadowing/Sun Position Calculations Annual Simulations,AverageOverDaysInFrequency,20,15000,SutherlandHodgman,SimpleSkyDiffuseModeling
+! <RoomAir Model>, Zone Name, Mixing/Mundt/UCSDDV/UCSDCV/UCSDUFI/UCSDUFE/User Defined
+RoomAir Model,THERMAL ZONE 1,UserDefined
+RoomAir Model,THERMAL ZONE 2,Mixing/Well-Stirred
+RoomAir Model,THERMAL ZONE 3,Mixing/Well-Stirred
+! <AirflowNetwork Model:Control>, No Multizone or Distribution/Multizone with Distribution/Multizone without Distribution/Multizone with Distribution only during Fan Operation
+AirflowNetwork Model:Control,NoMultizoneOrDistribution
+! <Zone Volume Capacitance Multiplier>, Sensible Heat Capacity Multiplier, Moisture Capacity Multiplier, Carbon Dioxide Capacity Multiplier, Generic Contaminant Capacity Multiplier
+Zone Volume Capacitance Multiplier,   1.000 ,   1.000,   1.000,   1.000
+! <Component Sizing Information>, Component Type, Component Name, Input Field Description, Value
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, THERMAL ZONE 1 IDEAL LOADS AIR SYSTEM, User-Specified Maximum Total Cooling Capacity [m3/s], 2000.00000
+! <Environment>,Environment Name,Environment Type, Start Date, End Date, Start DayOfWeek, Duration {#days}, Source:Start DayOfWeek,  Use Daylight Saving, Use Holidays, Apply Weekend Holiday Rule,  Use Rain Values, Use Snow Values
+! <Environment:Special Days>, Special Day Name, Special Day Type, Source, Start Date, Duration {#days}
+! <Environment:Daylight Saving>, Daylight Saving Indicator, Source, Start Date, End Date
+! <Environment:WarmupDays>, NumberofWarmupDays
+Environment,RUN PERIOD 1,WeatherFileRunPeriod,07/01,07/31,Thursday,31,Use RunPeriod Specified Day,No,No,No,Yes,Yes
+Environment:Daylight Saving,No,RunPeriod Object
+Environment:WarmupDays,  7
